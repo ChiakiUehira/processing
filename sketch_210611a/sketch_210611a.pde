@@ -1,5 +1,5 @@
 
-int tileCount = 40;
+int tileCount = 20;
 int actRandomSeed = 0;
 
 int actStrokeCap = ROUND;
@@ -14,7 +14,9 @@ void draw () {
   background(255);
   smooth();
   noFill();
-  strokeCap(actRandomSeed);
+
+  randomSeed(actRandomSeed);
+  strokeCap(actStrokeCap);
 
   for (int gridY = 0; gridY < tileCount; gridY++){
     for (int gridX = 0; gridX < tileCount; gridX++) {
