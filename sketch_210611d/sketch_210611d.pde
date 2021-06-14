@@ -5,7 +5,8 @@ int circleAlpha = 180;
 int actRandomSeed = 0;
 
 void setup() {
-  size(600, 600);
+  // size(600, 600);
+  fullScreen();
   pixelDensity(displayDensity());
 }
 
